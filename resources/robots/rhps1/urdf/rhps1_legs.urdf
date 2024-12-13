@@ -1,0 +1,2125 @@
+<?xml version="1.0"?>
+<robot name="RHPS1"
+       xmlns:xi="http://www.w3.org/2001/XInclude">
+  <link name="BODY">
+    <visual>
+      <origin xyz="0 0 0.919" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/BODY_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.919" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/BODY_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="4.224" />
+      <origin xyz="-0.024353 0.000134 0.035637" rpy="0 -0 0"/>
+      <inertia ixx="0.03" ixy="-2.166e-05" ixz="0.003" iyy="0.019" iyz="-1.064e-05" izz="0.029"/>
+    </inertial>
+  </link>
+  <gazebo reference="BODY">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="CHEST_Y_LINK">
+    <visual>
+      <origin xyz="0 0 0.145" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/CHEST_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.145" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/CHEST_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.642" />
+      <origin xyz="-8.4e-05 -2.16179e-10 -0.020648" rpy="0 -0 0"/>
+      <inertia ixx="0.0009471" ixy="1.10539e-18" ixz="-2.351e-06" iyy="0.001" iyz="-1.243e-12" izz="0.0007336"/>
+    </inertial>
+  </link>
+  <gazebo reference="CHEST_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="CHEST_P_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/CHEST_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/CHEST_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="24.326" />
+      <origin xyz="-0.0735656 0.00100849 0.203514" rpy="0 -0 0"/>
+      <inertia ixx="1.27759" ixy="0.00161" ixz="0.0624505" iyy="1.24301" iyz="-0.00491848" izz="0.508131"/>
+    </inertial>
+  </link>
+  <gazebo reference="CHEST_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="HEAD_Y_LINK">
+    <visual>
+      <origin xyz="0 0 0.45" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/HEAD_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.45" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/HEAD_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.141" />
+      <origin xyz="6.11041e-10 -1.73072e-11 -0.0169" rpy="0 -0 0"/>
+      <inertia ixx="9.986e-05" ixy="2.983e-15" ixz="7.576e-13" iyy="9.311e-05" iyz="-2.07801e-14" izz="6.333e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="HEAD_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="HEAD_P_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/HEAD_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/HEAD_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="3.10429" />
+      <origin xyz="0.016782 0.000116429 0.0884525" rpy="0 -0 0"/>
+      <inertia ixx="0.00828177" ixy="-2.35189e-05" ixz="0.00543737" iyy="0.00600046" iyz="0.000155827" izz="0.0300765"/>
+    </inertial>
+  </link>
+  <gazebo reference="HEAD_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="azure_color_frame">
+    <inertial>
+      <mass value="0" />
+      <origin xyz="0 0 1.11022e-16" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="azure_color_frame">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="azure_depth_frame">
+    <inertial>
+      <mass value="0" />
+      <origin xyz="0 0 1.11022e-16" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="azure_depth_frame">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_SHOULDER_P_LINK">
+    <visual>
+      <origin xyz="0 0.18 0.33" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_SHOULDER_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.18 0.33" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_SHOULDER_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.888" />
+      <origin xyz="1.1e-05 -0.0174 0.00372" rpy="0 -0 0"/>
+      <inertia ixx="0.003" ixy="-5.104e-06" ixz="-2.989e-06" iyy="0.003" iyz="0.0002533" izz="0.004"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_SHOULDER_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_SHOULDER_R_LINK">
+    <visual>
+      <origin xyz="0 0 -0.04" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_SHOULDER_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.04" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_SHOULDER_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.255" />
+      <origin xyz="4.1e-05 -4.1e-05 -0.026007" rpy="0 -0 0"/>
+      <inertia ixx="0.0003469" ixy="1.966e-07" ixz="3.162e-07" iyy="0.000339" iyz="-3.162e-07" izz="0.0001401"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_SHOULDER_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_SHOULDER_Y_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_SHOULDER_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_SHOULDER_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.423" />
+      <origin xyz="-0.015143 2.1e-05 -0.214302" rpy="0 -0 0"/>
+      <inertia ixx="0.135" ixy="-8.177e-06" ixz="-0.008" iyy="0.135" iyz="3.211e-05" izz="0.004"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_SHOULDER_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_ELBOW_P_LINK">
+    <visual>
+      <origin xyz="0.02 0 -0.26" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_ELBOW_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.02 0 -0.26" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_ELBOW_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.198" />
+      <origin xyz="4.7e-05 -4.7e-05 -0.02445" rpy="0 -0 0"/>
+      <inertia ixx="0.0002062" ixy="1.574e-07" ixz="3.651e-07" iyy="0.0002101" iyz="-3.651e-07" izz="8.643e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_ELBOW_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_ELBOW_Y_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_ELBOW_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_ELBOW_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.422" />
+      <origin xyz="0.004086 7.1e-05 -0.167613" rpy="0 -0 0"/>
+      <inertia ixx="0.047" ixy="-9.91e-07" ixz="0.001" iyy="0.046" iyz="2.421e-05" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_ELBOW_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_WRIST_R_LINK">
+    <visual>
+      <origin xyz="0 0 -0.23" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_WRIST_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.23" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_WRIST_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.066" />
+      <origin xyz="6.4e-05 -3.21481e-11 -0.013286" rpy="0 -0 0"/>
+      <inertia ixx="3.506e-05" ixy="1.36852e-19" ixz="1.219e-07" iyy="3.55e-05" iyz="-2.077e-14" izz="2.442e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_WRIST_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_WRIST_Y_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_WRIST_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_WRIST_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1" />
+      <origin xyz="-0.014277 -0.000695 -0.106364" rpy="0 -0 0"/>
+      <inertia ixx="0.0207027" ixy="-0.00102364" ixz="-0.00522004" iyy="0.0232301" iyz="-0.0036218" izz="0.00506715"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_WRIST_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_HAND_LINK">
+    <inertial>
+      <mass value="0.025" />
+      <origin xyz="0 0 -2.77556e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_HAND_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="l-one-finger-link">
+    <inertial>
+      <mass value="0.025" />
+      <origin xyz="0 0 -2.77556e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+  </link>
+  <gazebo reference="l-one-finger-link">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="left_hand_camera_optical_frame">
+    <inertial>
+      <mass value="0" />
+      <origin xyz="0 0 -8.32667e-17" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="left_hand_camera_optical_frame">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_SHOULDER_P_LINK">
+    <visual>
+      <origin xyz="0 -0.18 0.33" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_SHOULDER_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.18 0.33" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_SHOULDER_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.888" />
+      <origin xyz="1.1e-05 0.0174 0.00372" rpy="0 -0 0"/>
+      <inertia ixx="0.003" ixy="5.104e-06" ixz="-2.989e-06" iyy="0.003" iyz="-0.0002533" izz="0.004"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_SHOULDER_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_SHOULDER_R_LINK">
+    <visual>
+      <origin xyz="0 0 -0.04" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_SHOULDER_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.04" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_SHOULDER_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.255" />
+      <origin xyz="4.1e-05 4.1e-05 -0.026007" rpy="0 -0 0"/>
+      <inertia ixx="0.0003469" ixy="-1.966e-07" ixz="3.162e-07" iyy="0.000339" iyz="3.162e-07" izz="0.0001401"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_SHOULDER_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_SHOULDER_Y_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_SHOULDER_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_SHOULDER_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.423" />
+      <origin xyz="-0.015143 -2.1e-05 -0.214302" rpy="0 -0 0"/>
+      <inertia ixx="0.135" ixy="8.177e-06" ixz="-0.008" iyy="0.135" iyz="-3.211e-05" izz="0.004"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_SHOULDER_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_ELBOW_P_LINK">
+    <visual>
+      <origin xyz="0.02 0 -0.26" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_ELBOW_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.02 0 -0.26" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_ELBOW_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.198" />
+      <origin xyz="4.7e-05 4.7e-05 -0.02445" rpy="0 -0 0"/>
+      <inertia ixx="0.0002062" ixy="-1.574e-07" ixz="3.651e-07" iyy="0.0002101" iyz="3.651e-07" izz="8.643e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_ELBOW_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_ELBOW_Y_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_ELBOW_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_ELBOW_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.422" />
+      <origin xyz="0.004086 -7.1e-05 -0.167613" rpy="0 -0 0"/>
+      <inertia ixx="0.047" ixy="9.91e-07" ixz="0.001" iyy="0.046" iyz="-2.421e-05" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_ELBOW_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_WRIST_R_LINK">
+    <visual>
+      <origin xyz="0 0 -0.23" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_WRIST_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.23" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_WRIST_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.066" />
+      <origin xyz="6.4e-05 3.21481e-11 -0.013286" rpy="0 -0 0"/>
+      <inertia ixx="3.506e-05" ixy="-1.36852e-19" ixz="1.219e-07" iyy="3.55e-05" iyz="2.077e-14" izz="2.442e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_WRIST_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_WRIST_Y_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_WRIST_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_WRIST_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1" />
+      <origin xyz="-0.014277 0.000695 -0.106364" rpy="0 -0 0"/>
+      <inertia ixx="0.022" ixy="0.0003586" ixz="-0.002" iyy="0.024" iyz="-3.745e-05" izz="0.003"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_WRIST_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_HAND_LINK">
+    <inertial>
+      <mass value="0.025" />
+      <origin xyz="0 0 -2.77556e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_HAND_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="r-one-finger-link">
+    <inertial>
+      <mass value="0.025" />
+      <origin xyz="0 0 -2.77556e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+  </link>
+  <gazebo reference="r-one-finger-link">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="right_hand_camera_optical_frame">
+    <inertial>
+      <mass value="0" />
+      <origin xyz="0 0 -8.32667e-17" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="right_hand_camera_optical_frame">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_CROTCH_Y_LINK">
+    <visual>
+      <origin xyz="0 0.08 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_CROTCH_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.08 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_CROTCH_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.736" />
+      <origin xyz="-0.011141 -1.97101e-07 -0.020711" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="-1.834e-09" ixz="-0.0003646" iyy="0.001" iyz="-2.429e-09" izz="0.0008328"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_CROTCH_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_CROTCH_R_LINK">
+    <visual>
+      <origin xyz="0 0 -0.055" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_CROTCH_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.055" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_CROTCH_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.038" />
+      <origin xyz="2.24234e-18 0 4.85723e-17" rpy="0 -0 0"/>
+      <inertia ixx="1.155e-05" ixy="-9.32e-22" ixz="7.36e-26" iyy="1.933e-06" iyz="1.6939e-22" izz="1.23e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_CROTCH_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_CROTCH_P_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_CROTCH_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_CROTCH_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="3.086" />
+      <origin xyz="0.007174 -0.001266 -0.199224" rpy="0 -0 0"/>
+      <inertia ixx="0.153" ixy="0.0001913" ixz="0.008" iyy="0.152" iyz="-0.001" izz="0.007"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_CROTCH_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC-CI-base_LINK">
+    <visual>
+      <origin xyz="0 -0.035 -0.35" rpy="3.14159 0.231183 3.14159"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/LC-CI-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.035 -0.35" rpy="3.14159 0.231183 3.14159"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/LC-CI-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="-1.38778e-17 0 -5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC-CI-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC_CI_LINK">
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="1.38778e-17 0 5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC_CI_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC-CI-hinge_LINK">
+    <visual>
+      <origin xyz="0 0.035 -0.05" rpy="0 -0.253073 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/LC-CI-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.035 -0.05" rpy="0 -0.253073 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/LC-CI-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="2.08167e-17 0 8.32667e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC-CI-hinge_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC-CO-base_LINK">
+    <visual>
+      <origin xyz="0 0.035 -0.35" rpy="3.14159 0.231183 3.14159"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/LC-CO-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.035 -0.35" rpy="3.14159 0.231183 3.14159"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/LC-CO-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="-1.38778e-17 0 -5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC-CO-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC_CO_LINK">
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="1.38778e-17 0 5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC_CO_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC-CO-hinge_LINK">
+    <visual>
+      <origin xyz="0 -0.035 -0.05" rpy="0 -0.253073 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/LC-CO-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.035 -0.05" rpy="0 -0.253073 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/LC-CO-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="2.08167e-17 0 8.32667e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC-CO-hinge_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_KNEE_P_LINK">
+    <visual>
+      <origin xyz="0 0 -0.36" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_KNEE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.36" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_KNEE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="3.127" />
+      <origin xyz="0.001417 7.2e-05 -0.140948" rpy="0 -0 0"/>
+      <inertia ixx="0.105" ixy="1.337e-05" ixz="-0.004" iyy="0.107" iyz="-1.65e-05" izz="0.006"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_KNEE_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC-AI-base_LINK">
+    <visual>
+      <origin xyz="0 -0.029 -0.08" rpy="0 0.17994 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/LC-AI-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.029 -0.08" rpy="0 0.17994 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/LC-AI-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="-1.38778e-17 0 5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC-AI-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC_AI_LINK">
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="0 0 -5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC_AI_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC-AI-hinge_LINK">
+    <visual>
+      <origin xyz="0 -0.029 -0.3" rpy="0 0.253073 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/LC-AI-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.029 -0.3" rpy="0 0.253073 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/LC-AI-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="-2.77556e-17 0 1.11022e-16" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC-AI-hinge_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC-AO-base_LINK">
+    <visual>
+      <origin xyz="0 0.029 -0.08" rpy="0 0.17994 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/LC-AO-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.029 -0.08" rpy="0 0.17994 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/LC-AO-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="-1.38778e-17 0 5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC-AO-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC_AO_LINK">
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="0 0 -5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC_AO_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC-AO-hinge_LINK">
+    <visual>
+      <origin xyz="0 0.029 -0.3" rpy="0 0.253073 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/LC-AO-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.029 -0.3" rpy="0 0.253073 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/LC-AO-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="-2.77556e-17 0 1.11022e-16" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC-AO-hinge_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_ANKLE_R_LINK">
+    <visual>
+      <origin xyz="0 0 -0.36" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_ANKLE_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.36" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_ANKLE_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.063" />
+      <origin xyz="7.80164e-17 -1.249e-16 1.11022e-16" rpy="0 -0 0"/>
+      <inertia ixx="2.337e-05" ixy="8.089e-22" ixz="6.082e-20" iyy="8.977e-06" iyz="-9.70468e-21" izz="3.083e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_ANKLE_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_ANKLE_P_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_ANKLE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/L_ANKLE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.297" />
+      <origin xyz="0.003832 7e-06 -0.066184" rpy="0 -0 0"/>
+      <inertia ixx="0.008" ixy="1.696e-06" ixz="0.000975" iyy="0.011" iyz="6.371e-07" izz="0.005"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_ANKLE_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_CROTCH_Y_LINK">
+    <visual>
+      <origin xyz="0 -0.08 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_CROTCH_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.08 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_CROTCH_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.736" />
+      <origin xyz="-0.011141 1.97101e-07 -0.020711" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="1.834e-09" ixz="-0.0003646" iyy="0.001" iyz="2.429e-09" izz="0.0008328"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_CROTCH_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_CROTCH_R_LINK">
+    <visual>
+      <origin xyz="0 0 -0.055" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_CROTCH_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.055" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_CROTCH_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.038" />
+      <origin xyz="2.24234e-18 0 4.85723e-17" rpy="0 -0 0"/>
+      <inertia ixx="1.155e-05" ixy="9.32e-22" ixz="7.36e-26" iyy="1.933e-06" iyz="-1.6939e-22" izz="1.23e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_CROTCH_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_CROTCH_P_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_CROTCH_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_CROTCH_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="3.086" />
+      <origin xyz="0.007174 0.001266 -0.199224" rpy="0 -0 0"/>
+      <inertia ixx="0.153" ixy="-0.0001913" ixz="0.008" iyy="0.152" iyz="0.001" izz="0.007"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_CROTCH_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC-CI-base_LINK">
+    <visual>
+      <origin xyz="0 0.035 -0.35" rpy="3.14159 0.231183 3.14159"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/RC-CI-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.035 -0.35" rpy="3.14159 0.231183 3.14159"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/RC-CI-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="-1.38778e-17 0 -5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC-CI-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC_CI_LINK">
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="1.38778e-17 0 5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC_CI_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC-CI-hinge_LINK">
+    <visual>
+      <origin xyz="0 0.035 -0.05" rpy="0 -0.253073 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/RC-CI-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.035 -0.05" rpy="0 -0.253073 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/RC-CI-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="2.08167e-17 0 8.32667e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC-CI-hinge_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC-CO-base_LINK">
+    <visual>
+      <origin xyz="0 -0.035 -0.35" rpy="3.14159 0.231183 3.14159"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/RC-CO-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.035 -0.35" rpy="3.14159 0.231183 3.14159"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/RC-CO-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="-1.38778e-17 0 -5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC-CO-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC_CO_LINK">
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="1.38778e-17 0 5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC_CO_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC-CO-hinge_LINK">
+    <visual>
+      <origin xyz="0 -0.035 -0.05" rpy="0 -0.253073 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/RC-CO-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.035 -0.05" rpy="0 -0.253073 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/RC-CO-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="2.08167e-17 0 8.32667e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC-CO-hinge_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_KNEE_P_LINK">
+    <visual>
+      <origin xyz="0 0 -0.36" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_KNEE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.36" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_KNEE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="3.127" />
+      <origin xyz="0.001417 -7.2e-05 -0.140948" rpy="0 -0 0"/>
+      <inertia ixx="0.105" ixy="-1.337e-05" ixz="-0.004" iyy="0.107" iyz="1.65e-05" izz="0.006"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_KNEE_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC-AI-base_LINK">
+    <visual>
+      <origin xyz="0 0.029 -0.08" rpy="0 0.17994 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/RC-AI-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.029 -0.08" rpy="0 0.17994 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/RC-AI-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="-1.38778e-17 0 5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC-AI-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC_AI_LINK">
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="0 0 -5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC_AI_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC-AI-hinge_LINK">
+    <visual>
+      <origin xyz="0 0.029 -0.3" rpy="0 0.253073 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/RC-AI-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.029 -0.3" rpy="0 0.253073 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/RC-AI-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="-2.77556e-17 0 1.11022e-16" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC-AI-hinge_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC-AO-base_LINK">
+    <visual>
+      <origin xyz="0 -0.029 -0.08" rpy="0 0.17994 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/RC-AO-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.029 -0.08" rpy="0 0.17994 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/RC-AO-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="-1.38778e-17 0 5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC-AO-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC_AO_LINK">
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="0 0 -5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC_AO_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC-AO-hinge_LINK">
+    <visual>
+      <origin xyz="0 -0.029 -0.3" rpy="0 0.253073 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/RC-AO-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.029 -0.3" rpy="0 0.253073 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/RC-AO-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="-2.77556e-17 0 1.11022e-16" rpy="0 -0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC-AO-hinge_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_ANKLE_R_LINK">
+    <visual>
+      <origin xyz="0 0 -0.36" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_ANKLE_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.36" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_ANKLE_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.063" />
+      <origin xyz="7.80164e-17 1.249e-16 1.11022e-16" rpy="0 -0 0"/>
+      <inertia ixx="2.337e-05" ixy="-8.089e-22" ixz="6.082e-20" iyy="8.977e-06" iyz="9.70468e-21" izz="3.083e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_ANKLE_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_ANKLE_P_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_ANKLE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="../meshes/RHPS1main_plug_plug/R_ANKLE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.297" />
+      <origin xyz="0.003832 -7e-06 -0.066184" rpy="0 -0 0"/>
+      <inertia ixx="0.008" ixy="-1.696e-06" ixz="0.000975" iyy="0.011" iyz="-6.371e-07" izz="0.005"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_ANKLE_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <joint name="CHEST_Y" type="fixed">
+    <parent link="BODY"/>
+    <child  link="CHEST_Y_LINK"/>
+    <origin xyz="0 0 0.145" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-0.523599" upper="0.523599" effort="122" velocity="7.85" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="CHEST_Y_trans" >
+    <actuator name="CHEST_Y_motor" />
+    <joint name="CHEST_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="CHEST_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="CHEST_P" type="fixed">
+    <parent link="CHEST_Y_LINK"/>
+    <child  link="CHEST_P_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-0.523599" upper="1.22173" effort="122" velocity="7.85" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="CHEST_P_trans" >
+    <actuator name="CHEST_P_motor" />
+    <joint name="CHEST_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="CHEST_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="HEAD_Y" type="fixed">
+    <parent link="CHEST_P_LINK"/>
+    <child  link="HEAD_Y_LINK"/>
+    <origin xyz="0 0 0.45" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-3.14159" upper="3.14159" effort="13.2" velocity="17.7" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="HEAD_Y_trans" >
+    <actuator name="HEAD_Y_motor" />
+    <joint name="HEAD_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="HEAD_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="HEAD_P" type="fixed">
+    <parent link="HEAD_Y_LINK"/>
+    <child  link="HEAD_P_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-0.523598" upper="0.523598" effort="13.2" velocity="17.7" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="HEAD_P_trans" >
+    <actuator name="HEAD_P_motor" />
+    <joint name="HEAD_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="HEAD_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="azure_color_frame_joint" type="fixed">
+    <parent link="HEAD_P_LINK"/>
+    <child  link="azure_color_frame"/>
+    <origin xyz="0.0792 0.0017 0.1743" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="azure_color_frame_joint_trans" >
+    <actuator name="azure_color_frame_joint_motor" />
+    <joint name="azure_color_frame_joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="azure_color_frame_joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="azure_depth_frame_joint" type="fixed">
+    <parent link="HEAD_P_LINK"/>
+    <child  link="azure_depth_frame"/>
+    <origin xyz="0.0792 0.0017 0.1743" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="azure_depth_frame_joint_trans" >
+    <actuator name="azure_depth_frame_joint_motor" />
+    <joint name="azure_depth_frame_joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="azure_depth_frame_joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_SHOULDER_P" type="fixed">
+    <parent link="CHEST_P_LINK"/>
+    <child  link="L_SHOULDER_P_LINK"/>
+    <origin xyz="0 0.18 0.33" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-3.14159" upper="3.14159" effort="50" velocity="6.28" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_SHOULDER_P_trans" >
+    <actuator name="L_SHOULDER_P_motor" />
+    <joint name="L_SHOULDER_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_SHOULDER_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_SHOULDER_R" type="fixed">
+    <parent link="L_SHOULDER_P_LINK"/>
+    <child  link="L_SHOULDER_R_LINK"/>
+    <origin xyz="0 0 -0.04" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-0.698131" upper="1.8326" effort="63.3" velocity="7.54" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_SHOULDER_R_trans" >
+    <actuator name="L_SHOULDER_R_motor" />
+    <joint name="L_SHOULDER_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_SHOULDER_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_SHOULDER_Y" type="fixed">
+    <parent link="L_SHOULDER_R_LINK"/>
+    <child  link="L_SHOULDER_Y_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-3.14159" upper="3.14159" effort="63.3" velocity="7.53" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_SHOULDER_Y_trans" >
+    <actuator name="L_SHOULDER_Y_motor" />
+    <joint name="L_SHOULDER_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_SHOULDER_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_ELBOW_P" type="fixed">
+    <parent link="L_SHOULDER_Y_LINK"/>
+    <child  link="L_ELBOW_P_LINK"/>
+    <origin xyz="0.02 0 -0.26" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-2.35619" upper="0" effort="46" velocity="6.28" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_ELBOW_P_trans" >
+    <actuator name="L_ELBOW_P_motor" />
+    <joint name="L_ELBOW_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_ELBOW_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_ELBOW_Y" type="fixed">
+    <parent link="L_ELBOW_P_LINK"/>
+    <child  link="L_ELBOW_Y_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-3.14159" upper="3.14159" effort="46" velocity="8.38" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_ELBOW_Y_trans" >
+    <actuator name="L_ELBOW_Y_motor" />
+    <joint name="L_ELBOW_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_ELBOW_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_WRIST_R" type="fixed">
+    <parent link="L_ELBOW_Y_LINK"/>
+    <child  link="L_WRIST_R_LINK"/>
+    <origin xyz="0 0 -0.23" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-0.872665" upper="1.5708" effort="34.5" velocity="8.37" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_WRIST_R_trans" >
+    <actuator name="L_WRIST_R_motor" />
+    <joint name="L_WRIST_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_WRIST_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_WRIST_Y" type="fixed">
+    <parent link="L_WRIST_R_LINK"/>
+    <child  link="L_WRIST_Y_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-1.5708" upper="1.5708" effort="34.5" velocity="8.37" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_WRIST_Y_trans" >
+    <actuator name="L_WRIST_Y_motor" />
+    <joint name="L_WRIST_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_WRIST_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_HAND" type="fixed">
+    <parent link="L_WRIST_Y_LINK"/>
+    <child  link="L_HAND_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1" upper="1" effort="1" velocity="1" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_HAND_trans" >
+    <actuator name="L_HAND_motor" />
+    <joint name="L_HAND" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_HAND">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="l-one-finger" type="fixed">
+    <parent link="L_WRIST_Y_LINK"/>
+    <child  link="l-one-finger-link"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1" upper="1" effort="1" velocity="1" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="l-one-finger_trans" >
+    <actuator name="l-one-finger_motor" />
+    <joint name="l-one-finger" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="l-one-finger">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="left_hand_camera_optical_frame_joint" type="fixed">
+    <parent link="L_WRIST_Y_LINK"/>
+    <child  link="left_hand_camera_optical_frame"/>
+    <origin xyz="0.052 0 -0.06995" rpy="0 0 -1.5708 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="left_hand_camera_optical_frame_joint_trans" >
+    <actuator name="left_hand_camera_optical_frame_joint_motor" />
+    <joint name="left_hand_camera_optical_frame_joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="left_hand_camera_optical_frame_joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_SHOULDER_P" type="fixed">
+    <parent link="CHEST_P_LINK"/>
+    <child  link="R_SHOULDER_P_LINK"/>
+    <origin xyz="0 -0.18 0.33" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-3.14159" upper="3.14159" effort="50" velocity="6.28" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_SHOULDER_P_trans" >
+    <actuator name="R_SHOULDER_P_motor" />
+    <joint name="R_SHOULDER_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_SHOULDER_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_SHOULDER_R" type="fixed">
+    <parent link="R_SHOULDER_P_LINK"/>
+    <child  link="R_SHOULDER_R_LINK"/>
+    <origin xyz="0 0 -0.04" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.8326" upper="0.698131" effort="63.3" velocity="7.53" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_SHOULDER_R_trans" >
+    <actuator name="R_SHOULDER_R_motor" />
+    <joint name="R_SHOULDER_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_SHOULDER_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_SHOULDER_Y" type="fixed">
+    <parent link="R_SHOULDER_R_LINK"/>
+    <child  link="R_SHOULDER_Y_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-3.14159" upper="3.14159" effort="63.3" velocity="7.54" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_SHOULDER_Y_trans" >
+    <actuator name="R_SHOULDER_Y_motor" />
+    <joint name="R_SHOULDER_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_SHOULDER_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_ELBOW_P" type="fixed">
+    <parent link="R_SHOULDER_Y_LINK"/>
+    <child  link="R_ELBOW_P_LINK"/>
+    <origin xyz="0.02 0 -0.26" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-2.35619" upper="0" effort="46" velocity="6.28" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_ELBOW_P_trans" >
+    <actuator name="R_ELBOW_P_motor" />
+    <joint name="R_ELBOW_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_ELBOW_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_ELBOW_Y" type="fixed">
+    <parent link="R_ELBOW_P_LINK"/>
+    <child  link="R_ELBOW_Y_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-3.14159" upper="3.14159" effort="46" velocity="6.28" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_ELBOW_Y_trans" >
+    <actuator name="R_ELBOW_Y_motor" />
+    <joint name="R_ELBOW_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_ELBOW_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_WRIST_R" type="fixed">
+    <parent link="R_ELBOW_Y_LINK"/>
+    <child  link="R_WRIST_R_LINK"/>
+    <origin xyz="0 0 -0.23" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.5708" upper="0.872665" effort="34.5" velocity="8.37" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_WRIST_R_trans" >
+    <actuator name="R_WRIST_R_motor" />
+    <joint name="R_WRIST_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_WRIST_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_WRIST_Y" type="fixed">
+    <parent link="R_WRIST_R_LINK"/>
+    <child  link="R_WRIST_Y_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-1.5708" upper="1.5708" effort="34.5" velocity="8.37" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_WRIST_Y_trans" >
+    <actuator name="R_WRIST_Y_motor" />
+    <joint name="R_WRIST_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_WRIST_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_HAND" type="fixed">
+    <parent link="R_WRIST_Y_LINK"/>
+    <child  link="R_HAND_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1" upper="1" effort="1" velocity="1" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_HAND_trans" >
+    <actuator name="R_HAND_motor" />
+    <joint name="R_HAND" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_HAND">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="r-one-finger" type="fixed">
+    <parent link="R_WRIST_Y_LINK"/>
+    <child  link="r-one-finger-link"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1" upper="1" effort="1" velocity="1" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="r-one-finger_trans" >
+    <actuator name="r-one-finger_motor" />
+    <joint name="r-one-finger" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="r-one-finger">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="right_hand_camera_optical_frame_joint" type="fixed">
+    <parent link="R_WRIST_Y_LINK"/>
+    <child  link="right_hand_camera_optical_frame"/>
+    <origin xyz="0.052 0 -0.06995" rpy="0 0 -1.5708 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="right_hand_camera_optical_frame_joint_trans" >
+    <actuator name="right_hand_camera_optical_frame_joint_motor" />
+    <joint name="right_hand_camera_optical_frame_joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="right_hand_camera_optical_frame_joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_CROTCH_Y" type="revolute">
+    <parent link="BODY"/>
+    <child  link="L_CROTCH_Y_LINK"/>
+    <origin xyz="0 0.08 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-1.5708" upper="1.5708" effort="39.8" velocity="7.9" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_CROTCH_Y_trans" >
+    <actuator name="L_CROTCH_Y_motor" />
+    <joint name="L_CROTCH_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_CROTCH_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_CROTCH_R" type="revolute">
+    <parent link="L_CROTCH_Y_LINK"/>
+    <child  link="L_CROTCH_R_LINK"/>
+    <origin xyz="0 0 -0.055" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-0.628319" upper="0.628319" effort="109.3" velocity="8.79" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_CROTCH_R_trans" >
+    <actuator name="L_CROTCH_R_motor" />
+    <joint name="L_CROTCH_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_CROTCH_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_CROTCH_P" type="revolute">
+    <parent link="L_CROTCH_R_LINK"/>
+    <child  link="L_CROTCH_P_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-1.91986" upper="0.610865" effort="156.1" velocity="6.11" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_CROTCH_P_trans" >
+    <actuator name="L_CROTCH_P_motor" />
+    <joint name="L_CROTCH_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_CROTCH_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-CI-base-joint" type="fixed">
+    <parent link="L_CROTCH_P_LINK"/>
+    <child  link="LC-CI-base_LINK"/>
+    <origin xyz="0 -0.035 -0.35" rpy="3.14159 0.231183 3.14159 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-CI-base-joint_trans" >
+    <actuator name="LC-CI-base-joint_motor" />
+    <joint name="LC-CI-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-CI-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-CI-hinge-joint" type="fixed">
+    <parent link="L_CROTCH_P_LINK"/>
+    <child  link="LC-CI-hinge_LINK"/>
+    <origin xyz="0 0.035 -0.05" rpy="0 -0.253073 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-CI-hinge-joint_trans" >
+    <actuator name="LC-CI-hinge-joint_motor" />
+    <joint name="LC-CI-hinge-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-CI-hinge-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-CO-base-joint" type="fixed">
+    <parent link="L_CROTCH_P_LINK"/>
+    <child  link="LC-CO-base_LINK"/>
+    <origin xyz="0 0.035 -0.35" rpy="3.14159 0.231183 3.14159 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-CO-base-joint_trans" >
+    <actuator name="LC-CO-base-joint_motor" />
+    <joint name="LC-CO-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-CO-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-CO-hinge-joint" type="fixed">
+    <parent link="L_CROTCH_P_LINK"/>
+    <child  link="LC-CO-hinge_LINK"/>
+    <origin xyz="0 -0.035 -0.05" rpy="0 -0.253073 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-CO-hinge-joint_trans" >
+    <actuator name="LC-CO-hinge-joint_motor" />
+    <joint name="LC-CO-hinge-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-CO-hinge-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_KNEE_P" type="revolute">
+    <parent link="L_CROTCH_P_LINK"/>
+    <child  link="L_KNEE_P_LINK"/>
+    <origin xyz="0 0 -0.36" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="2.44346" effort="108" velocity="5.98" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_KNEE_P_trans" >
+    <actuator name="L_KNEE_P_motor" />
+    <joint name="L_KNEE_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_KNEE_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-AI-base-joint" type="fixed">
+    <parent link="L_KNEE_P_LINK"/>
+    <child  link="LC-AI-base_LINK"/>
+    <origin xyz="0 -0.029 -0.08" rpy="0 0.17994 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-AI-base-joint_trans" >
+    <actuator name="LC-AI-base-joint_motor" />
+    <joint name="LC-AI-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-AI-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-AI-hinge-joint" type="fixed">
+    <parent link="L_KNEE_P_LINK"/>
+    <child  link="LC-AI-hinge_LINK"/>
+    <origin xyz="0 -0.029 -0.3" rpy="0 0.253073 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-AI-hinge-joint_trans" >
+    <actuator name="LC-AI-hinge-joint_motor" />
+    <joint name="LC-AI-hinge-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-AI-hinge-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-AO-base-joint" type="fixed">
+    <parent link="L_KNEE_P_LINK"/>
+    <child  link="LC-AO-base_LINK"/>
+    <origin xyz="0 0.029 -0.08" rpy="0 0.17994 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-AO-base-joint_trans" >
+    <actuator name="LC-AO-base-joint_motor" />
+    <joint name="LC-AO-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-AO-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-AO-hinge-joint" type="fixed">
+    <parent link="L_KNEE_P_LINK"/>
+    <child  link="LC-AO-hinge_LINK"/>
+    <origin xyz="0 0.029 -0.3" rpy="0 0.253073 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-AO-hinge-joint_trans" >
+    <actuator name="LC-AO-hinge-joint_motor" />
+    <joint name="LC-AO-hinge-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-AO-hinge-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_ANKLE_R" type="revolute">
+    <parent link="L_KNEE_P_LINK"/>
+    <child  link="L_ANKLE_R_LINK"/>
+    <origin xyz="0 0 -0.36" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-0.523599" upper="0.523599" effort="42.9" velocity="11.1" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_ANKLE_R_trans" >
+    <actuator name="L_ANKLE_R_motor" />
+    <joint name="L_ANKLE_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_ANKLE_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_ANKLE_P" type="revolute">
+    <parent link="L_ANKLE_R_LINK"/>
+    <child  link="L_ANKLE_P_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-1.5708" upper="0.698132" effort="73.1" velocity="6.53" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_ANKLE_P_trans" >
+    <actuator name="L_ANKLE_P_motor" />
+    <joint name="L_ANKLE_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_ANKLE_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_CROTCH_Y" type="revolute">
+    <parent link="BODY"/>
+    <child  link="R_CROTCH_Y_LINK"/>
+    <origin xyz="0 -0.08 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-1.5708" upper="1.5708" effort="39.8" velocity="7.9" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_CROTCH_Y_trans" >
+    <actuator name="R_CROTCH_Y_motor" />
+    <joint name="R_CROTCH_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_CROTCH_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_CROTCH_R" type="revolute">
+    <parent link="R_CROTCH_Y_LINK"/>
+    <child  link="R_CROTCH_R_LINK"/>
+    <origin xyz="0 0 -0.055" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-0.628319" upper="0.628319" effort="109.3" velocity="8.79" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_CROTCH_R_trans" >
+    <actuator name="R_CROTCH_R_motor" />
+    <joint name="R_CROTCH_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_CROTCH_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_CROTCH_P" type="revolute">
+    <parent link="R_CROTCH_R_LINK"/>
+    <child  link="R_CROTCH_P_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-1.91986" upper="0.610865" effort="156.1" velocity="6.11" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_CROTCH_P_trans" >
+    <actuator name="R_CROTCH_P_motor" />
+    <joint name="R_CROTCH_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_CROTCH_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-CI-base-joint" type="fixed">
+    <parent link="R_CROTCH_P_LINK"/>
+    <child  link="RC-CI-base_LINK"/>
+    <origin xyz="0 0.035 -0.35" rpy="3.14159 0.231183 3.14159 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-CI-base-joint_trans" >
+    <actuator name="RC-CI-base-joint_motor" />
+    <joint name="RC-CI-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-CI-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-CI-hinge-joint" type="fixed">
+    <parent link="R_CROTCH_P_LINK"/>
+    <child  link="RC-CI-hinge_LINK"/>
+    <origin xyz="0 0.035 -0.05" rpy="0 -0.253073 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-CI-hinge-joint_trans" >
+    <actuator name="RC-CI-hinge-joint_motor" />
+    <joint name="RC-CI-hinge-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-CI-hinge-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-CO-base-joint" type="fixed">
+    <parent link="R_CROTCH_P_LINK"/>
+    <child  link="RC-CO-base_LINK"/>
+    <origin xyz="0 -0.035 -0.35" rpy="3.14159 0.231183 3.14159 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-CO-base-joint_trans" >
+    <actuator name="RC-CO-base-joint_motor" />
+    <joint name="RC-CO-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-CO-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+   <joint name="RC-CO-hinge-joint" type="fixed">
+    <parent link="R_CROTCH_P_LINK"/>
+    <child  link="RC-CO-hinge_LINK"/>
+    <origin xyz="0 -0.035 -0.05" rpy="0 -0.253073 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-CO-hinge-joint_trans" >
+    <actuator name="RC-CO-hinge-joint_motor" />
+    <joint name="RC-CO-hinge-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-CO-hinge-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_KNEE_P" type="revolute">
+    <parent link="R_CROTCH_P_LINK"/>
+    <child  link="R_KNEE_P_LINK"/>
+    <origin xyz="0 0 -0.36" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="2.44346" effort="108" velocity="5.98" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_KNEE_P_trans" >
+    <actuator name="R_KNEE_P_motor" />
+    <joint name="R_KNEE_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_KNEE_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-AI-base-joint" type="fixed">
+    <parent link="R_KNEE_P_LINK"/>
+    <child  link="RC-AI-base_LINK"/>
+    <origin xyz="0 0.029 -0.08" rpy="0 0.17994 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-AI-base-joint_trans" >
+    <actuator name="RC-AI-base-joint_motor" />
+    <joint name="RC-AI-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-AI-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-AI-hinge-joint" type="fixed">
+    <parent link="R_KNEE_P_LINK"/>
+    <child  link="RC-AI-hinge_LINK"/>
+    <origin xyz="0 0.029 -0.3" rpy="0 0.253073 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-AI-hinge-joint_trans" >
+    <actuator name="RC-AI-hinge-joint_motor" />
+    <joint name="RC-AI-hinge-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-AI-hinge-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-AO-base-joint" type="fixed">
+    <parent link="R_KNEE_P_LINK"/>
+    <child  link="RC-AO-base_LINK"/>
+    <origin xyz="0 -0.029 -0.08" rpy="0 0.17994 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-AO-base-joint_trans" >
+    <actuator name="RC-AO-base-joint_motor" />
+    <joint name="RC-AO-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-AO-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+   <joint name="RC-AO-hinge-joint" type="fixed">
+    <parent link="R_KNEE_P_LINK"/>
+    <child  link="RC-AO-hinge_LINK"/>
+    <origin xyz="0 -0.029 -0.3" rpy="0 0.253073 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-AO-hinge-joint_trans" >
+    <actuator name="RC-AO-hinge-joint_motor" />
+    <joint name="RC-AO-hinge-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-AO-hinge-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_ANKLE_R" type="revolute">
+    <parent link="R_KNEE_P_LINK"/>
+    <child  link="R_ANKLE_R_LINK"/>
+    <origin xyz="0 0 -0.36" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-0.523599" upper="0.523599" effort="42.9" velocity="11.1" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_ANKLE_R_trans" >
+    <actuator name="R_ANKLE_R_motor" />
+    <joint name="R_ANKLE_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_ANKLE_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_ANKLE_P" type="revolute">
+    <parent link="R_ANKLE_R_LINK"/>
+    <child  link="R_ANKLE_P_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-1.5708" upper="0.698132" effort="73.2" velocity="6.53" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_ANKLE_P_trans" >
+    <actuator name="R_ANKLE_P_motor" />
+    <joint name="R_ANKLE_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_ANKLE_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+</robot>

@@ -67,6 +67,7 @@ class XBotLCfg(LeggedRobotCfg):
         flip_visual_attachments = False
         replace_cylinder_with_capsule = False
         fix_base_link = False
+        armature = 0.1
 
     class terrain(LeggedRobotCfg.terrain):
         mesh_type = 'plane'
